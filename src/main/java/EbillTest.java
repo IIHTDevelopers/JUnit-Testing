@@ -1,11 +1,10 @@
 
 
 //import static org.junit.Assert.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.Test;
 
-import org.junit.jupiter.api.Test;
-
-import com.ebill.service.EbillService;
+import static org.junit.Assert.assertEquals;
+//import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class EbillTest {
@@ -15,6 +14,7 @@ public class EbillTest {
     
     @Test
     public void testCalculateBillAmount_Input_0() {
+        System.out.println("Custom");
         bill = new EbillService(0);
         
         assertEquals(0, bill.calculateBillAmount(), 0.001);
